@@ -2,34 +2,71 @@
 <html>
 <head>
     <title>Turismo en México - Inicio</title>
+
+    <style>
+        body{
+            background-color:#e8f5e9;
+            font-family:Arial, sans-serif;
+            margin:0;
+        }
+
+        header{
+            background:#006400;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        nav{
+            background:#228B22;
+            text-align:center;
+            padding:15px;
+        }
+
+        select{
+            padding:8px;
+            font-size:16px;
+        }
+
+        section{
+            padding:20px;
+            text-align:center;
+        }
+
+        img{
+            border-radius:10px;
+        }
+    </style>
+
 </head>
 <body>
 
-<h1>🌎 Turismo en México</h1>
+<header>
+    <h1 style="font-size:70px;">🌎 TURISMO EN MÉXICO 🌎</h1>
+    <h2>Descubre los destinos más increíbles del país</h2>
+</header>
 
-<select onchange="window.location.href=this.value;">
-    <option>Menú</option>
-    <option value="index.html">Inicio</option>
-    <option value="lugares.html">Lugares Turísticos</option>
-    <option value="contacto.html">Contacto</option>
-</select>
+<nav>
+    <select onchange="window.location.href=this.value;">
+        <option>Menú</option>
+        <option value="index.html">Inicio</option>
+        <option value="lugares.html">Lugares Turísticos</option>
+        <option value="contacto.html">Contacto</option>
+    </select>
+</nav>
 
-<hr>
+<section>
 
 <h2>Bienvenidos</h2>
 
 <p>
-México es un país lleno de cultura, historia, playas y tradiciones.
-Miles de turistas lo visitan cada año para conocer sus maravillosos destinos.
+México es un país lleno de cultura, historia, gastronomía, playas y tradiciones.
+Cada año millones de turistas visitan sus ciudades, zonas arqueológicas y paisajes naturales.
 </p>
 
-<img src="Mexico.jpg" width="500">
+<img src="Mexico.jpg" width="600">
 
-<h3>Video sobre México</h3>
-
-<video width="500" controls>
-    <source src="video.mp3" type="video/mp3">
-</video>
+</section>
 
 </body>
 </html>
