@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Turismo en México - Inicio</title>
+<title>Turismo en México</title>
 
-    <style>
-        body{
-            background-color:#e8f5e9;
-            font-family:Arial, sans-serif;
-            margin:0;
-        }
+<style>
+body{
+font-family:Arial;
+background:#e8f5e9;
+margin:0;
+}
 
-        header{
-            background:#006400;
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
+header{
+background:#00695c;
+color:white;
+padding:40px;
+text-align:center;
+}
 
-        nav{
-            background:#228B22;
-            text-align:center;
-            padding:15px;
-        }
+h1{
+font-size:55px;
+margin:0;
+}
 
-        select{
-            padding:8px;
-            font-size:16px;
-        }
+.contenido{
+padding:20px;
+}
 
-        section{
-            padding:20px;
-            text-align:center;
-        }
+img{
+width:600px;
+max-width:100%;
+border-radius:10px;
+}
 
-        img{
-            border-radius:10px;
-        }
-    </style>
+select{
+padding:10px;
+font-size:16px;
+}
+</style>
 
 </head>
 <body>
 
 <header>
-    <h1 style="font-size:70px;">🌎 TURISMO EN MÉXICO 🌎</h1>
-    <h2>Descubre los destinos más increíbles del país</h2>
+<h1>🌎 TURISMO EN MÉXICO 🌎</h1>
+<p>Descubre los mejores destinos turísticos del país</p>
 </header>
 
-<nav>
-    <select onchange="window.location.href=this.value;">
-        <option>Menú</option>
-        <option value="index.html">Inicio</option>
-        <option value="lugares.html">Lugares Turísticos</option>
-        <option value="contacto.html">Contacto</option>
-    </select>
-</nav>
+<div class="contenido">
 
-<section>
+<select onchange="window.location.href=this.value;">
+<option>Menú</option>
+<option value="index.html">Inicio</option>
+<option value="lugares.html">Lugares Turísticos</option>
+<option value="contacto.html">Contacto</option>
+</select>
+
+<hr>
 
 <h2>Bienvenidos</h2>
 
 <p>
-México es un país lleno de cultura, historia, gastronomía, playas y tradiciones.
-Cada año millones de turistas visitan sus ciudades, zonas arqueológicas y paisajes naturales.
+México es uno de los países más visitados del mundo gracias a sus playas,
+sitios arqueológicos, cultura, gastronomía y tradiciones.
 </p>
 
-<img src="Mexico.jpg" width="600">
+<img src="México.jpg">
 
-</section>
+<h2>🎥 Video sobre México</h2>
+
+<video width="700" controls>
+<source src="Los 15 Lugares Más Imposibles de MÉXICO Que No Puedes Perderte Documental en 4K.mp3">
+</video>
+
+</div>
 
 </body>
 </html>
