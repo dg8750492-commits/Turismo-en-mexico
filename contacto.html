@@ -4,79 +4,120 @@
 <title>Contacto</title>
 
 <style>
+
 body{
-font-family:Arial;
-background:#e3f2fd;
-margin:0;
+    font-family:Arial, sans-serif;
+    background:#e3f2fd;
+    margin:0;
 }
 
 header{
-background:#1565c0;
-color:white;
-padding:30px;
-text-align:center;
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
 
-.contenido{
-padding:20px;
-}
-
-input,textarea{
-width:300px;
-padding:8px;
-}
-
-button{
-padding:10px;
+nav{
+    background:#1976d2;
+    text-align:center;
+    padding:15px;
 }
 
 select{
-padding:10px;
-font-size:16px;
+    padding:8px;
+    font-size:16px;
 }
+
+section{
+    padding:20px;
+}
+
+form{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0px 0px 10px gray;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    background:#1565c0;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+input[type="submit"]:hover{
+    background:#0d47a1;
+}
+
+audio{
+    margin-top:20px;
+}
+
 </style>
 
 </head>
 <body>
 
 <header>
-<h1>📞 Contacto</h1>
+<h1>📞 CONTACTO</h1>
 </header>
 
-<div class="contenido">
-
+<nav>
 <select onchange="window.location.href=this.value;">
 <option>Menú</option>
 <option value="index.html">Inicio</option>
 <option value="lugares.html">Lugares Turísticos</option>
 <option value="contacto.html">Contacto</option>
 </select>
+</nav>
 
-<hr>
+<section>
 
-<p>
-Si deseas más información sobre destinos turísticos de México,
-completa el siguiente formulario.
-</p>
+<form action="https://formsubmit.co/TUCORREO@gmail.com" method="POST">
 
-Nombre:<br>
-<input type="text"><br><br>
+<h2>Formulario de Contacto</h2>
 
-Correo:<br>
-<input type="email"><br><br>
+<label>Nombre:</label>
+<input type="text" name="nombre" required>
 
-Mensaje:<br>
-<textarea rows="5"></textarea><br><br>
+<label>Correo Electrónico:</label>
+<input type="email" name="correo" required>
 
-<button>Enviar</button>
+<label>Número de Teléfono:</label>
+<input type="tel" name="telefono" required>
 
-<h2>🎵 Audio informativo</h2>
+<label>Mensaje:</label>
+<textarea name="mensaje" rows="5" required></textarea>
+
+<input type="submit" value="Enviar Mensaje">
+
+</form>
+
+<center>
+
+<h2>🎵 Audio Informativo</h2>
 
 <audio controls>
 <source src="audio.mp3" type="audio/mpeg">
 </audio>
 
-</div>
+</center>
+
+</section>
 
 </body>
 </html>
