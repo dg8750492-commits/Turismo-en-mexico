@@ -1,44 +1,98 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>Contacto</title>
+<title>Contacto</title>
+
+<style>
+body{
+background-color:#e8f5e9;
+font-family:Arial,sans-serif;
+margin:0;
+}
+
+header{
+background:#006400;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+nav{
+background:#228B22;
+padding:15px;
+text-align:center;
+}
+
+select{
+padding:8px;
+font-size:16px;
+}
+
+section{
+padding:20px;
+}
+
+form{
+background:white;
+padding:20px;
+border-radius:10px;
+max-width:500px;
+margin:auto;
+}
+
+audio{
+margin-top:20px;
+}
+</style>
+
 </head>
 <body>
 
-<h1>📞 Contacto</h1>
+<header>
+<h1>📞 CONTACTO</h1>
+</header>
 
+<nav>
 <select onchange="window.location.href=this.value;">
-    <option>Menú</option>
-    <option value="index.html">Inicio</option>
-    <option value="lugares.html">Lugares Turísticos</option>
-    <option value="contacto.html">Contacto</option>
+<option>Menú</option>
+<option value="index.html">Inicio</option>
+<option value="lugares.html">Lugares Turísticos</option>
+<option value="contacto.html">Contacto</option>
 </select>
+</nav>
 
-<hr>
+<section>
 
 <p>
-Si deseas más información sobre los destinos turísticos de México,
-puedes completar el siguiente formulario.
+Si deseas más información sobre los destinos turísticos de México, puedes completar el siguiente formulario.
 </p>
 
 <form>
-Nombre:<br>
-<input type="text"><br><br>
 
-Correo:<br>
-<input type="email"><br><br>
+Nombre:<br> <input type="text"><br><br>
+
+Correo:<br> <input type="email"><br><br>
 
 Mensaje:<br>
+
 <textarea rows="5" cols="30"></textarea><br><br>
 
 <input type="submit" value="Enviar">
+
 </form>
 
-<h2>🎤 Audio informativo</h2>
+<center>
+
+<h2>🎤 Audio Informativo</h2>
 
 <audio controls>
-    <source src="audio.mp3" type="audio/mpeg">
+<source src="audio.mp3" type="audio/mpeg">
 </audio>
+
+</center>
+
+</section>
 
 </body>
 </html>
